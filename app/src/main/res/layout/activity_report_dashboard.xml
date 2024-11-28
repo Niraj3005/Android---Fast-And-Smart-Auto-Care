@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="false"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/dash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#877B13"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/admindashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Admin Dashboard"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="81dp"
+                    android:layout_height="62dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    app:srcCompat="@drawable/photo" />
+
+                <TextView
+                    android:id="@+id/adminemail4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/admindashboard"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#0B395E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/adminname4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adminemail4"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#000305"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="3">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/request_orderreport"
+                            android:layout_width="88dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/od_placed" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Order Report"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/request_requestreport"
+                            android:layout_width="88dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/requestreport" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Request Report"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/request_mechanicreport"
+                            android:layout_width="88dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/mechanicreport" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Mechanic Report"
+                            android:textColor="#6f6f6f"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

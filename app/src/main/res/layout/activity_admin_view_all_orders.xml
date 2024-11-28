@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".AdminViewAllOrders"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/dash"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="#877B13"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/admindashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-smallcaps"
+
+                    android:text="Admin Dashboard"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/adminfname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/admindashboard"
+                    android:layout_marginTop="5dp"
+                    android:text="12 Items"
+                    android:textColor="#000305"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="81dp"
+                    android:layout_height="62dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    app:srcCompat="@drawable/photo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <SearchView
+                    android:id="@+id/searchmech"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_roundborder"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="6dp"
+                    android:background="#91C1E8"
+                    android:fontFamily="@font/adamina"
+                    android:layout_below="@id/searchmech"
+                    android:gravity="center"
+                    android:padding="10dp"
+                        android:text="Order Details"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerviewallorder1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/txtdetails"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

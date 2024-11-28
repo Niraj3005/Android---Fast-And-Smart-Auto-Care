@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="?android:dividerHorizontal"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/mprofile_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/user2" />
+
+                    <TextView
+                        android:id="@+id/view_fname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/mprofile_photo"
+                        android:includeFontPadding="false"
+                        android:text="Shriram"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/view_lname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/view_fname"
+                        android:includeFontPadding="false"
+                        android:text="Abhale"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/view_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_fname"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/mprofile_photo"
+                        android:includeFontPadding="false"
+                        android:text="Shriram"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/view_phoneno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_email"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/mprofile_photo"
+                        android:includeFontPadding="false"
+                        android:text="Shriram"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/view_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_phoneno"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/mprofile_photo"
+                        android:includeFontPadding="false"
+                        android:text="Shriram"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view_address"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/mprofile_photo"
+                        android:includeFontPadding="false"
+                        android:text="Shriram"
+                        android:textSize="14sp" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/view_address"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/btn_toggle"
+                        android:textOff="Activate"
+                        android:textOn="Deactivate"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/mech_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/view_address"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_toRightOf="@id/toggleButton"
+                        android:background="#FF9800"
+                        android:text="Delete" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_below="@id/toggleButton"
+                        android:layout_marginTop="20dp"
+                        android:background="#000000" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

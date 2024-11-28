@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/view_daterequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textSize="14sp" />
+
+        <TextView android:layout_weight="5" />
+
+        <TextView
+            android:id="@+id/view_idrequest"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:includeFontPadding="false"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Requester Name : " />
+
+        <TextView
+            android:id="@+id/view_usernamerequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="true"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Reg. No. : " />
+
+        <TextView
+            android:id="@+id/view_vehiclenorequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="true"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Requester Mobile No. : " />
+
+        <TextView
+            android:id="@+id/view_mobilenorequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="true"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Type : " />
+
+        <TextView
+            android:id="@+id/view_vehicletyperequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="true"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Description : " />
+
+        <TextView
+            android:id="@+id/view_descrequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="true"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Location : " />
+
+        <TextView
+            android:id="@+id/view_locationrequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:includeFontPadding="true"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/view_trackrequest"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:background="#FFC107"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Track Location"
+            android:textColor="#006064"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ToggleButton
+            android:id="@+id/request_status"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_toggle1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textOff="Pending"
+            android:textOn="Completed"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </TableRow>
+
+    <TableRow android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/view_cancelrequest"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="#D14238"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/view_feedbackrequest"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#4FC0F3"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="View Feedback"
+            android:textColor="#5D4037"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:background="#000000" />
+
+</TableLayout>

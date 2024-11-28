@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--   color for the app bar and other primary UI elements -->
+    <color name="colorPrimary">#7688EF</color>
+
+    <!--   a darker variant of the primary color, used for
+           the status bar (on Android 5.0+) and contextual app bars -->
+    <color name="colorPrimaryDark">#6876D6</color>
+
+    <!--   a secondary color for controls like checkboxes and text fields -->
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="spinner_base_color">#000</color>
+    <color name="spinner_hint_text_color">#000</color>
+    <color name="vivid">#FFFF9800</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorText">#000111</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+
+</resources>

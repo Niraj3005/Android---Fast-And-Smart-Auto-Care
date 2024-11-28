@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="150dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center_horizontal"
+        android:text="Feedback Details"
+        android:textSize="24sp" />
+
+    <TableRow android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/view_fdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/view_frequestid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="User Name : " />
+
+        <TextView
+            android:id="@+id/view_fusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Email ID  : " />
+
+        <TextView
+            android:id="@+id/view_femailid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="true"
+            android:text="Rating : " />
+
+        <TextView
+            android:id="@+id/view_frating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/star"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:includeFontPadding="true"
+            android:text="Suggestion : " />
+
+        <TextView
+            android:id="@+id/view_fsuggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="3dp"
+        android:text="Are you satisfied with our service?" />
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/view_fsatisfaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:background="#000000" />
+
+</TableLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProducts"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="#877B13"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/admindashboard1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Admin Dashboard"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="81dp"
+                    android:layout_height="62dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    app:srcCompat="@drawable/photo" />
+
+                <TextView
+                    android:id="@+id/adminemail12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/admindashboard1"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#0B395E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/adminname12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adminemail12"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#000305"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <SearchView
+                    android:id="@+id/searchproduct"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_roundborder"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtproduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/searchproduct"
+                    android:layout_marginTop="6dp"
+                    android:background="#91C1E8"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Update Product"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtproduct"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Product ID">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/productId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Product Name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/productName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/productCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="10dp"
+                        android:entries="@array/Product_Category"
+                        app:ms_hint="Product Category" />
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/vehicleType"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="10dp"
+                        android:entries="@array/Vehicle_type"
+                        app:ms_hint="Vehicle Type" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Price">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/productPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Product Description">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/productDesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:inputType="text" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Stock Quantity">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/stockQty1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/select_productPicture"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="75dp"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#6DB170"
+                        android:text="Select Picture"
+                        android:textColor="#fff" />
+
+                    <ImageView
+                        android:id="@+id/productPicture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="75dp" />
+
+                    <Button
+                        android:id="@+id/addProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#5B879A"
+                        android:text="Update"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:id="@+id/tablelayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/admin_feedbackId"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/admin_feedbackDate"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/admin_feedbackUsername"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/admin_feedbackMechanicname"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/admin_feedbackRating"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content" />
+
+
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

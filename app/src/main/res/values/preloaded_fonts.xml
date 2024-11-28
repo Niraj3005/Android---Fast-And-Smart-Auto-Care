@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/aclonica</item>
+        <item>@font/acme</item>
+        <item>@font/adamina</item>
+        <item>@font/allan</item>
+        <item>@font/almendra_bold</item>
+        <item>@font/autour_one</item>
+        <item>@font/bangers</item>
+        <item>@font/creepster</item>
+        <item>@font/rubik_bold</item>
+        <item>@font/rubik_bold_italic</item>
+        <item>@font/rubik_mono_one</item>
+    </array>
+</resources>

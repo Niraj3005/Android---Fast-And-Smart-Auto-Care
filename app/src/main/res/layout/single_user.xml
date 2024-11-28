@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <TableRow
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#F0F7F7"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="First Name:" />
+
+        <TextView
+            android:id="@+id/tfname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#F0F7F7"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Last Name:" />
+
+        <TextView
+            android:id="@+id/tlname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#F0F7F7"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Email ID:" />
+
+        <TextView
+            android:id="@+id/temail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#F0F7F7"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Vehicle No.:" />
+
+        <TextView
+            android:id="@+id/tvehicleno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#F0F7F7"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Phone No.:" />
+
+        <TextView
+            android:id="@+id/tphoneno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" />
+
+    </TableRow>
+    <TableRow
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#F0F7F7"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Address:" />
+
+        <TextView
+            android:id="@+id/taddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#F0F7F7"
+        android:padding="3dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Delete" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+
+            android:text="Virat Kohli" />
+
+
+    </TableRow>
+</TableLayout>

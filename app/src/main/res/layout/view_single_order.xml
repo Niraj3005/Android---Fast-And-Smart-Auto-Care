@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="?android:dividerHorizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/continueorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/vieworder_img"
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/vieworder_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/vieworder_img"
+                    android:includeFontPadding="false"
+                    android:text="Shriram"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/vieworder_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vieworder_date"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/vieworder_img"
+                    android:includeFontPadding="false"
+                    android:text="Shriram"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:includeFontPadding="false"
+                    android:text=">"
+                    android:textSize="34sp" />
+
+                <RatingBar
+                    android:id="@+id/vieworder_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/vieworder_name"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/vieworder_img"
+                    android:numStars="5"
+                    android:scaleX="1"
+                    android:scaleY="1"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vieworder_rating"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/vieworder_img"
+                    android:includeFontPadding="false"
+                    android:text="Rate this product now"
+                    android:textSize="14sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@id/vieworder_rating"
+                    android:layout_marginTop="40dp"
+                    android:background="#000000" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

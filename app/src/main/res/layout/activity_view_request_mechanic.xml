@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewRequestServices"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/dash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#BCB04D"
+                android:padding="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="62dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="false"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="250dp">
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/user3" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/username6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#0B395E"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/useremail6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/username6"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#0B395E"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rel1">
+
+                <SearchView
+                    android:id="@+id/search_requestmechanic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_roundborder"
+                    android:inputType="text" />
+
+
+                <TextView
+                    android:id="@+id/txtdetails3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/search_requestmechanic"
+                    android:layout_marginTop="6dp"
+                    android:background="#91C1E8"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Mechanics"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/makerequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtdetails3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#F5FBFB"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Select Mechanic to make request..."
+                    android:textSize="18sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerviewrequestmechanic"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_below="@id/makerequest"
+                    android:layout_marginTop="15dp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

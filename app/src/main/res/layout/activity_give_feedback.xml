@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a2"
+    android:padding="20dp"
+    tools:context=".GiveFeedback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/autour_one"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Service Feedback"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/gg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Rate Mechanic"
+            android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <RatingBar
+            android:id="@+id/feedback_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF026807"
+            android:numStars="5"
+            android:progressBackgroundTint="#FFFFFF"
+            android:progressTint="#FF026807" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Are you satisfied with our service?"
+        android:textSize="16sp" />
+    <RadioGroup
+        android:id="@+id/feedback_satisfaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/verysatisfied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Very Satisfied" />
+
+        <RadioButton
+            android:id="@+id/satisfied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:minHeight="48dp"
+            android:text="Satisfied" />
+
+        <RadioButton
+            android:id="@+id/neutral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Neutral" />
+
+        <RadioButton
+            android:id="@+id/unsatisfied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:minHeight="48dp"
+            android:text="Unsatisfied" />
+
+        <RadioButton
+            android:id="@+id/veryunsatisfied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:minHeight="48dp"
+            android:text="Very Unsatisfied" />
+    </RadioGroup>
+
+        <EditText
+            android:id="@+id/feedback_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Any Suggestions...."
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/feedback_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="#F4511E"
+            android:text="Send Feedback"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+</LinearLayout>
+    </ScrollView>

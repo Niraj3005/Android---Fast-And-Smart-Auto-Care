@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".OrderReport"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal|vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/dash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#877B13"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/admindashboard5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Admin Dashboard"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="81dp"
+                    android:layout_height="62dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="false"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    app:srcCompat="@drawable/photo" />
+
+                <TextView
+                    android:id="@+id/adminemail5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/admindashboard5"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#0B395E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/adminname5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adminemail5"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#000305"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp">
+
+                <SearchView
+                    android:id="@+id/search_order1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_roundborder"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/txtdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/search_order1"
+                    android:layout_marginTop="6dp"
+                    android:background="#91C1E8"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Order Report"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/inputlayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/txtdetails"
+                    android:hint="Start Date">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/startdate"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:ems="10"
+                        android:focusable="false"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/inputlayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/inputlayout1"
+                    android:layout_below="@id/txtdetails"
+                    android:hint="End Date">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/enddate"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:ems="10"
+                        android:focusable="false"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/generate_orderreport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/inputlayout2"
+                    android:layout_marginLeft="115dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Generate Report" />
+
+                <ScrollView
+                    android:id="@+id/sc3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/generate_orderreport"
+                    android:scrollbars="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fadeScrollbars="false">
+
+                        <TableLayout
+                            android:id="@+id/tablelayout3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="horizontal">
+
+                        </TableLayout>
+                    </HorizontalScrollView>
+                </ScrollView>
+
+                <Button
+                    android:id="@+id/download_orderreport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sc3"
+                    android:layout_marginLeft="113dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Download Report" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

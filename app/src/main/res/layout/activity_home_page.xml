@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1EEFB"
+    tools:context=".HomePage">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:alpha="0.2"
+        android:background="@drawable/aa"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="170dp"
+        android:text="Welcome to"
+        android:textColor="#0F1E6C"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:foregroundGravity="center|center_horizontal"
+        android:gravity="center|center_horizontal"
+        android:text="Fast And Smart Autocare"
+        android:textColor="#0F1E6C"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/mech"
+        android:layout_width="190dp"
+        android:layout_height="125dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/bb" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mech"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="5dp"
+        android:text="Mechanic"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/driver"
+        android:layout_width="187dp"
+        android:layout_height="91dp"
+        android:layout_below="@id/textView6"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@drawable/ad" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/driver"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="34dp"
+        android:text="Vehicle Driver"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/admin"
+        android:layout_width="190dp"
+        android:layout_height="125dp"
+        android:layout_below="@id/textView7"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@drawable/admin" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="14dp"
+        android:text="        Admin"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="143dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/car5" />
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="?android:dividerHorizontal"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/adminorder_img"
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp" />
+
+                <TextView
+                    android:id="@+id/adminorder_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:includeFontPadding="false"
+                    android:text="Shriram"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/adminorder_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/adminorder_img"
+                    android:includeFontPadding="false"
+                    android:text="Shriram"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/adminorder_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/adminorder_date"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/adminorder_img"
+                    android:includeFontPadding="false"
+                    android:text="Shriram"
+                    android:textSize="16sp" />
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/adminorder_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/adminorder_name"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/adminorder_img"
+                    android:entries="@array/order_status"
+                    app:ms_hint="Order Status" />
+
+                <Button
+                    android:id="@+id/adminorder_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/adminorder_status"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/adminorder_img"
+                    android:background="@color/green"
+                    android:padding="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Update Status" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@id/adminorder_update"
+                    android:layout_marginTop="20dp"
+                    android:background="#000000" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

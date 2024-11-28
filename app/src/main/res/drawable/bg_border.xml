@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+    <solid android:color="#fff"/> // this the the inner background color
+    <stroke android:width="2dp"/> //this is for the stroke of the border
+    <stroke android:color="@android:color/black"/> //this is the stroke color
+</shape>

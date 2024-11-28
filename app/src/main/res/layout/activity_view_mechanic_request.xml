@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/my_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        app:menu="@menu/main_menu"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="false"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/dash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#AFDFF4"
+                android:padding="20dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="62dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="false"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="250dp">
+                <ImageView
+                    android:id="@+id/img12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/user1" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/mechanicname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#0B395E"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/mechanicemail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/mechanicname1"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#0B395E"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <SearchView
+                android:id="@+id/search_mechrequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_roundborder"
+                android:baselineAligned="false" />
+
+            <TextView
+                android:id="@+id/txtdetails3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_mechrequest"
+                android:layout_marginTop="6dp"
+                android:background="#91C1E8"
+                android:fontFamily="@font/adamina"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Requests Received"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewmechrequest"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/txtdetails3"
+                android:layout_marginTop="15dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

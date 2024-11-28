@@ -1,0 +1,75 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.onroadremotevehicleassistantapp">
+    <uses-sdk android:minSdkVersion="16"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:icon="@drawable/car1" android:label="Remote Vehicle Assistant" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.RemoteVehicleAssistant" android:usesCleartextTraffic="true">
+        <activity android:name=".AdminViewFeedback" android:exported="true"/>
+        <activity android:name=".MechanicReport" android:exported="true"/>
+        <activity android:name=".RequestReport" android:exported="true"/>
+        <activity android:name=".ReportDashboard" android:exported="true"/>
+        <activity android:name=".OrderReport" android:exported="true"/>
+        <activity android:name=".MechanicViewFeedback" android:exported="true"/>
+        <activity android:name=".GiveFeedback" android:exported="true"/>
+        <activity android:name=".UpdateRequest" android:exported="true"/>
+        <activity android:name=".ViewUserRequest" android:exported="true"/>
+        <activity android:name=".ViewMechanicRequest" android:exported="true"/>
+        <activity android:name=".ViewRequestMechanic" android:exported="true"/>
+        <activity android:name=".MakeServiceRequest" android:exported="true"/>
+        <activity android:name=".ViewRequestServices" android:exported="true"/>
+        <!--
+                     The API key for Google Maps-based APIs is defined as a string resource.
+                     (See the file "res/values/google_maps_api.xml").
+                     Note that the API key is linked to the encryption key used to sign the APK.
+                     You need a different API key for each encryption key, including the release key that is used to
+                     sign the APK for publishing.
+                     You can define the keys for the debug and release targets in src/debug/ and src/release/.
+                 -->
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+        <activity android:name=".MapsActivity" android:exported="true" android:label="MapsActivity"/>
+        <activity android:name=".AdminViewAllOrders" android:exported="true"/>
+        <activity android:name=".OrderStatus" android:exported="true"/>
+        <activity android:name=".ViewOrder" android:exported="true"/>
+        <activity android:name=".MechanicDashboard" android:exported="true"/>
+        <activity android:name=".UserDashboard" android:exported="true"/>
+        <activity android:name=".UpdateMechanicProfile" android:exported="true"/>
+        <activity android:name=".UpdateUserProfile" android:exported="true"/>
+        <activity android:name=".MechanicProfile" android:exported="true"/>
+        <activity android:name=".ResetPasswordAdmin" android:exported="true"/>
+        <activity android:name=".ResetPasswordUser" android:exported="true"/>
+        <activity android:name=".ResetPasswordMechanic" android:exported="true"/>
+        <activity android:name=".ForgetPasswordUser" android:exported="true"/>
+        <activity android:name=".ForgetPasswordAdmin" android:exported="true"/>
+        <activity android:name=".ForgetPasswordMechanic" android:exported="true"/>
+        <activity android:name=".AdminSplashScreeen" android:exported="true"/>
+        <activity android:name=".Order" android:exported="true"/>
+        <activity android:name=".ViewCart" android:exported="true"/>
+        <activity android:name=".AddProducts" android:exported="true"/>
+        <activity android:name=".ViewProducts" android:exported="true"/>
+        <activity android:name=".UpdateProducts" android:exported="true"/>
+        <activity android:name=".Products" android:exported="true"/>
+        <activity android:name=".UpdateService" android:exported="true"/>
+        <activity android:name=".Services" android:exported="true"/>
+        <activity android:name=".AddServices" android:exported="true"/>
+        <activity android:name=".ViewMechanic" android:exported="true"/>
+        <activity android:name=".RegistrationMechanic" android:exported="true"/>
+        <activity android:name=".AdminLogin" android:exported="true"/>
+        <activity android:name=".MechanicLogin" android:exported="true"/>
+        <activity android:name=".Login" android:exported="true"/>
+        <activity android:name=".UserProfile" android:exported="true"/>
+        <activity android:name=".AdminHomepage" android:exported="true"/>
+        <activity android:name=".HomePage" android:exported="true"/>
+        <activity android:name=".Registration" android:exported="true"/>
+        <activity android:name=".RVA_HomePage" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+    </application>
+</manifest>
